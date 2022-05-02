@@ -1,0 +1,384 @@
+@media screen and (min-width: 0px) {
+  body .cajaDinoPrehis {
+    height: 30rem;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    margin-bottom: 49rem;
+    gap: 1rem;
+    z-index: 0;
+    -ms-grid-columns: 2rem;
+        grid-template-columns: 2rem;
+    -ms-grid-rows: 5rem auto auto;
+        grid-template-rows: 5rem auto auto;
+        grid-template-areas: 'costado header' 'costado subtitulo' 'costado dinoNews';
+  }
+  body .cajaDinoPrehis .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: header;
+    border-bottom: #c6ccdb 1px solid;
+    position: fixed;
+    left: 3rem;
+    width: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+    top: 0px;
+  }
+  body .cajaDinoPrehis .header img {
+    width: 10rem;
+    margin: 0.5rem;
+  }
+  body .cajaDinoPrehis .header h1 {
+    color: #c6ccdb;
+    display: inline-block;
+  }
+  body .cajaDinoPrehis .costado {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: costado;
+    border-right: #c6ccdb 1px solid;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 3rem;
+    height: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+  }
+  body .cajaDinoPrehis .costado img {
+    width: 2rem;
+    position: relative;
+    top: 3rem;
+    margin: .5rem 0 0 .5rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .cajaDinoPrehis .costado img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+  }
+  body .cajaDinoPrehis .costado .menu {
+    top: 1rem;
+  }
+  body .cajaDinoPrehis .subtitulo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: subtitulo;
+    background-color: #c6ccdb;
+    z-index: 0;
+  }
+  body .cajaDinoPrehis .dinoNews {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: dinoNews;
+    background-color: #0a2892;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  body .cajaListas {
+    height: 30rem;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    margin-bottom: 49rem;
+    gap: 1rem;
+    z-index: 0;
+    -ms-grid-columns: 2rem;
+        grid-template-columns: 2rem;
+    -ms-grid-rows: 5rem auto auto;
+        grid-template-rows: 5rem auto auto;
+    top: 3rem;
+        grid-template-areas: 'costado header' 'costado subtitulo' 'costado listas';
+  }
+  body .cajaListas .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: header;
+    border-bottom: #c6ccdb 1px solid;
+    position: fixed;
+    left: 3rem;
+    width: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+    top: 0px;
+  }
+  body .cajaListas .header img {
+    width: 10rem;
+    margin: 0.5rem;
+  }
+  body .cajaListas .header h1 {
+    color: #c6ccdb;
+    margin-left: .5rem;
+  }
+  body .cajaListas .costado {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: costado;
+    border-right: #c6ccdb 1px solid;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 3rem;
+    height: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+  }
+  body .cajaListas .costado img {
+    width: 2rem;
+    position: relative;
+    top: 3rem;
+    margin: .5rem 0 0 .5rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .cajaListas .costado img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+  }
+  body .cajaListas .costado .menu {
+    top: 1rem;
+  }
+  body .cajaListas .subtitulo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: subtitulo;
+    background-color: #c6ccdb;
+    z-index: 0;
+  }
+  body .cajaListas .contenedorListas {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: listas;
+    background-color: #0d1f67;
+    z-index: 0;
+    display: -ms-grid;
+    display: grid;
+    gap: 3rem;
+  }
+  body .cajaListas .contenedorListas .lista {
+    background-color: #c6ccdb;
+    height: 10rem;
+  }
+  body .cajaListas .contenedorListas .lista img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  body .cajaListas .contenedorListas {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body .cajaListas .contenedorListas {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body .cajaListas .contenedorListas {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body .cajaListas .contenedorListas {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  body .cajaJuegos {
+    height: 30rem;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    margin-bottom: 49rem;
+    gap: 1rem;
+    z-index: 0;
+    -ms-grid-columns: 2rem;
+        grid-template-columns: 2rem;
+    -ms-grid-rows: 5rem auto auto;
+        grid-template-rows: 5rem auto auto;
+        grid-template-areas: 'costado header' 'costado subtitulo' 'costado juegos';
+  }
+  body .cajaJuegos .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: header;
+    border-bottom: #c6ccdb 1px solid;
+    position: fixed;
+    left: 3rem;
+    width: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+    top: 0px;
+  }
+  body .cajaJuegos .header img {
+    width: 10rem;
+    margin: 0.5rem;
+  }
+  body .cajaJuegos .header h1 {
+    color: #c6ccdb;
+    margin-left: .5rem;
+  }
+  body .cajaJuegos .costado {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: costado;
+    border-right: #c6ccdb 1px solid;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 3rem;
+    height: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+  }
+  body .cajaJuegos .costado img {
+    width: 2rem;
+    position: relative;
+    top: 3rem;
+    margin: .5rem 0 0 .5rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .cajaJuegos .costado img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+  }
+  body .cajaJuegos .costado .menu {
+    top: 1rem;
+  }
+  body .cajaJuegos .subtitulo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: subtitulo;
+    background-color: #c6ccdb;
+    z-index: 0;
+  }
+  body .cajaJuegos .juegos {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: juegos;
+    background-color: #0a2892;
+    z-index: 0;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1f67;
+  }
+  body a {
+    text-decoration: none;
+  }
+  body .caja {
+    height: 30rem;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    margin-bottom: 49rem;
+    gap: 1rem;
+    z-index: 0;
+    -ms-grid-columns: 2rem;
+        grid-template-columns: 2rem;
+    -ms-grid-rows: 5rem auto auto;
+        grid-template-rows: 5rem auto auto;
+        grid-template-areas: 'costado header' 'costado subtitulo' 'costado news' 'costado frases';
+  }
+  body .caja .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: header;
+    border-bottom: #c6ccdb 1px solid;
+    position: fixed;
+    left: 3rem;
+    width: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+    top: 0px;
+  }
+  body .caja .header img {
+    width: 10rem;
+    margin: 0.5rem;
+  }
+  body .caja .costado {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    grid-area: costado;
+    border-right: #c6ccdb 1px solid;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 3rem;
+    height: 100%;
+    z-index: 1;
+    background-color: #0d1f67;
+  }
+  body .caja .costado img {
+    width: 2rem;
+    position: relative;
+    top: 3rem;
+    margin: .5rem 0 0 .5rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .caja .costado img:hover {
+    -webkit-transform: scale(120%);
+            transform: scale(120%);
+  }
+  body .caja .costado .menu {
+    top: 1rem;
+  }
+  body .caja .subtitulo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: subtitulo;
+    background-color: #c6ccdb;
+    z-index: 0;
+  }
+  body .caja .news {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: news;
+    background-color: #0a2892;
+    z-index: 0;
+  }
+  body .caja .frases {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: frases;
+    background-color: #7996d7;
+    z-index: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body .caja {
+        grid-template-areas: 'costado header header' 'costado subtitulo frases' 'costado news frases' 'costado news frases';
+  }
+  body .caja .subtitulo {
+    width: 130%;
+  }
+  body .caja .news {
+    width: 130%;
+  }
+  body .caja .frases {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    width: 50%;
+  }
+}

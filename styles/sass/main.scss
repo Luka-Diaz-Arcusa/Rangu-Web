@@ -1,0 +1,75 @@
+@import '_colores.scss';
+@import '_mixins.scss';
+@import '_dinoPrehis.scss';
+@import '_listas.scss';
+@import '_juegos.scss';
+@import '_config.scss';
+
+@media screen and (min-width: 0px) {
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: $color-body;
+        a {
+            text-decoration: none;
+        }
+        .caja{
+            @include caja;
+            grid-template-areas: 
+            'costado header'
+            'costado subtitulo'
+            'costado news'
+            'costado frases';
+            .header {
+                @include header;
+            }
+
+            .costado{
+                @include costado;
+                img {
+                 @include imgCostado; 
+                }
+                .menu {
+                    top: 1rem;
+                }
+            }
+            .subtitulo {
+                @include subtitulo;
+            }
+            .news{
+                grid-area: news;
+                background-color: $color-azul-oscuro;
+                z-index: 0;
+            }
+            .frases{
+                grid-area: frases;
+                background-color: $color-icon;
+                z-index: 0;
+            }
+        }
+    
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        .caja  {
+            grid-template-areas: 
+            'costado header header'
+            'costado subtitulo frases'
+            'costado news frases'
+            'costado news frases';
+            .subtitulo {
+                width: 130%;
+            }
+            .news {
+                width: 130%;
+            }
+            .frases {
+                justify-self: end;
+                width: 50%;
+            }
+        }
+    }
+}
